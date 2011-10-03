@@ -10,7 +10,40 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111001175524) do
+ActiveRecord::Schema.define(:version => 20111003061238) do
+
+  create_table "forem_forums", :force => true do |t|
+    t.string "title"
+    t.text   "description"
+  end
+
+  create_table "forem_posts", :force => true do |t|
+    t.integer  "topic_id"
+    t.text     "text"
+    t.integer  "user_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "reply_to_id"
+  end
+
+  create_table "forem_topics", :force => true do |t|
+    t.integer  "forum_id"
+    t.integer  "user_id"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.boolean  "locked",     :default => false, :null => false
+    t.boolean  "pinned",     :default => false
+    t.boolean  "hidden",     :default => false
+  end
+
+  create_table "forem_views", :force => true do |t|
+    t.integer  "user_id"
+    t.integer  "topic_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+    t.integer  "count",      :default => 0
+  end
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
