@@ -3,5 +3,3 @@ module User::ForemExtension
     true
   end
 end
-  
-  

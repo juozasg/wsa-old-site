@@ -31,7 +31,7 @@ gem 'unicorn'
 # gem 'capistrano'
 
 # To use debugger
-# gem 'ruby-debug'
+gem 'ruby-debug'
 
 
 # REFINERY CMS ================================================================
