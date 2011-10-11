@@ -53,6 +53,6 @@ gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.gi
 # Add i18n support (optional, you can remove this if you really want to).
 # gem 'refinerycms-i18n',           '~> 2.0.0', :git => 'git://github.com/parndt/refinerycms-i18n'
 gem 'forem', :git => "git://github.com/juozasg/forem.git"
-
+gem 'refinerycms-memberships', '1.0', :path => 'vendor/engines'
 
 # END USER DEFINED
