@@ -87,9 +87,9 @@ ActiveRecord::Schema.define(:version => 20111011044753) do
   create_table "refinery_page_translations", :force => true do |t|
     t.integer  "refinery_page_id"
     t.string   "locale"
-    t.string   "custom_slug"
     t.string   "title"
     t.string   "menu_title"
+    t.string   "custom_slug"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -195,6 +195,7 @@ ActiveRecord::Schema.define(:version => 20111011044753) do
     t.string   "postal_code"
     t.datetime "member_until"
     t.string   "membership_level"
+    t.string   "other_names"
   end
 
   add_index "refinery_users", ["id"], :name => "index_refinery_users_on_id"

@@ -50,5 +50,13 @@ module Members
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+
+
+    # MAILER
+    config.action_mailer.raise_delivery_errors = false
+    config.action_mailer.delivery_method = :sendmail
+    config.action_mailer.perform_deliveries = true
+    config.action_mailer.default_url_options = { :host => "members.workersolidarity.org" }
   end
 end
