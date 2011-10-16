@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111011044753) do
+ActiveRecord::Schema.define(:version => 20111009055143) do
 
   create_table "forem_forums", :force => true do |t|
     t.string "title"
@@ -43,11 +43,6 @@ ActiveRecord::Schema.define(:version => 20111011044753) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "count",      :default => 0
-  end
-
-  create_table "pages_roles", :id => false, :force => true do |t|
-    t.integer "page_id"
-    t.integer "role_id"
   end
 
   create_table "refinery_images", :force => true do |t|
@@ -182,19 +177,6 @@ ActiveRecord::Schema.define(:version => 20111011044753) do
     t.string   "remember_token"
     t.string   "reset_password_token"
     t.datetime "remember_created_at"
-    t.string   "first_name"
-    t.string   "last_name"
-    t.string   "title"
-    t.string   "phone"
-    t.string   "fax"
-    t.string   "website"
-    t.string   "organization"
-    t.string   "street_address"
-    t.string   "city"
-    t.integer  "province"
-    t.string   "postal_code"
-    t.datetime "member_until"
-    t.string   "membership_level"
     t.string   "other_names"
   end
 
