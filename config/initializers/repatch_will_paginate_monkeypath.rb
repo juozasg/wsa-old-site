@@ -13,8 +13,15 @@ module WillPaginate
         add_current_page_param(url_params, page)
         url_params.delete(:page) if url_params[:page] == 1
 
-        # @template.main_app.url_for(url_params)
-        @template.url_for(url_params)
+        begin
+          @template.main_app.url_for(url_params)
+        rescue ActionView::Template::Error => e
+          if e.message =~ /route/
+            @template.url_for(url_params)
+          else
+            raise e
+          end
+        end
       end
     end
   end
