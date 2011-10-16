@@ -1,0 +1,8 @@
+Admins can create new users (can create a new user already and then manually send them a password change email). Could add a "new password" checkbox and that would send a different email text
+Styling for forums
+Testing admin functions for forums
+Members can log in with their gmail (probably after being added by admins). Need to study the login system more/
+
+
+
+
