@@ -15,12 +15,8 @@ module WillPaginate
 
         begin
           @template.main_app.url_for(url_params)
-        rescue ActionView::Template::Error => e
-          if e.message =~ /route/
-            @template.url_for(url_params)
-          else
-            raise e
-          end
+        rescue ActionController::RoutingError
+          @template.url_for(url_params)
         end
       end
     end
