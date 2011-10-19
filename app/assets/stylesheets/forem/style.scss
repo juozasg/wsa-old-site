@@ -138,7 +138,8 @@ table.subdued{
   thead{
     th{
       background-color: $bar1-midbg;
-      font-weight: normal;
+      font-weight: bold;
+      font-variant: small-caps;
       text-align: left;
     }
   }
@@ -168,6 +169,7 @@ table.subdued{
 }
 
 .pages{
+  float: right;
   .pagination > * {
     display: inline-block;
     padding: .25em;

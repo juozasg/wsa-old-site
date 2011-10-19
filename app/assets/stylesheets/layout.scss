@@ -6,6 +6,15 @@
     clear:both;
 }
 
+#body_content_title {
+    margin-left: -5px;
+    margin-right: -5px;
+}
+
+#body_content_title, #forums_title {
+    padding: 8px;
+    margin-bottom: 25px;
+}
 
 #body_content_left {
     float: left;
@@ -36,6 +45,7 @@
 #body_content {
     margin-top: 36px;
 }
+
 #body_content_left {
     width: 574px;
 }
