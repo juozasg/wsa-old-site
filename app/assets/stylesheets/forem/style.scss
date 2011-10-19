@@ -12,20 +12,6 @@
     color: $lighter-text;
     font-style: oblique;
   }
-  menu{
-    padding-left: 0;
-    a{
-      background-color: $bar1-midbg;
-      padding: .5em;
-      display: inline-block;
-      color: $default-text;
-      text-decoration: none;
-      &:hover{
-        background-color: $bar1-bottombg;
-      }
-      margin: 0;
-    }
-  }
 }
 
 #topic, #forum {
@@ -112,16 +98,17 @@
       .actions{
         display: none;
         position: absolute;
-        right: 10px;
+        right: 0px;
         bottom: 0;
         list-style-type: none;
         li{
           a{
+            padding: 6px;
+            margin: 0;
+            margin-top: 5px;
             text-align: center;
             display: block;
             text-decoration: none;
-            padding: .25em;
-            margin-bottom: .25em;
             color: $default-text;
             background-color: $mid-bg1;
             &:hover{

@@ -1,77 +1,88 @@
 @import "color_variables";
 
-body, input, textarea, select, p, li, blockquote {
-	color: $default-text;
+body {
+    color: $default-text;
+    background-color: $default-background;
 }
 
-#body_content_left *, #body_content_right *, .page_part_body, .page_part_side_body {
-    line-height: 22px;
-    color: #585858;
-}
-
-h1, #body_content h1, h1#body_content_page_title {
-    color: #eb1313;
-    font-size: 25px;
-    font-weight: normal;
-    font-family: "Trebuchet MS", Trebuchet;
-}
-
-h2, h3 {
-    color: #8f8f8f;
-    font-weight: normal;
+body, input, textarea, select, p, li, blockquote, a, input {
+    color: inherit;
+    background-color: inherit;
 }
 
 
-h2 {
-    font-size: 18px;
-}
-h3 {
-    font-size: 16px;
-}
-#footer_content * {
-    color: #c7c7c7;
-    font-size: 11px;
+h1, h2, h3, h4, h5 {
+    color: $darker-text;
 }
 
+a {
+    color: $darker-text
+}
+
+a:visited {
+    color: $visited-text
+}
 
 #body_content_right img {
     border: 3px solid #c7c7c7;
 }
 
-#header {
-//    background: url('/theme/images/header_background.png') repeat-x;
+#header, header, menu, #menu {
+    &, * {
+        color: $darker-text;
+        background-color: $mid-bg1;
+    }
+    a, a:visited, a:hover {
+        text-decoration: none;
+        color: inherit;
+    }
 }
 
 
-#header_content h1, #header_content h1 a {
-    color: #feffff;
-    font-size: 24px;
-    font-weight: normal;
-    text-decoration: none;
+#menu, menu {
+    li, div, > a {
+     &.selected, &.selected * {
+        background-color: $light-bg1;
+      }
+      &:hover, &:hover * {
+          background-color: $mid-bg1-highlight;
+      }
+    }
 }
 
-#menu a, #menu li:hover ul li a, #menu a:hover nav a {
-    color: #969792;
-    text-decoration: none;
-    cursor: pointer;
+menu {
+    color: $default-text;
 }
-#menu li.selected a, #menu li:hover a, #menu li a:hover, #menu li ul li a:hover, #menu div.selected a, #menu a.selected, #menu a:hover, #menu div:hover > a {
-    color: #32322b;
-    background: white;
-}
-#menu li ul, #menu nav {
-    background: white;
-}
+
+//
+// #menu a, #menu li:hover ul li a, #menu a:hover nav a {
+//     color: #969792;
+//     cursor: pointer;
+// }
+
+// #menu li.selected a, #menu li:hover a, #menu li a:hover, #menu li ul li a:hover, #menu div.selected a, #menu a.selected, #menu a:hover, #menu div:hover > a {
+//     color: #32322b;
+//     background: white;
+// }
+
+// #menu li ul, #menu nav {
+//     background: white;
+// }
+//
+
+// .menu {
+//     li.selected > a {
+//         font-weight: bold;
+//     }
+// }
+
+
 
 #footer, footer {
-//    background: url('/theme/images/footer_background.png') repeat-x;
 }
-#footer_content {
-//    background: url('/images/refinery/logo.png') 0px 80px no-repeat;
-    text-align: right;
-}
+
 .inquiries .field input, .inquiries textarea {
-  border: 1px solid #75766f;
+    border: 1px solid #75766f;
 }
 
 

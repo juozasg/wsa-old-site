@@ -14,15 +14,35 @@
 // and also everything that is especially static
 // everything else goes into other files
 body {
-  	margin: 0px;
-	padding: 0px;
+    margin: 0px;
+    padding: 0px;
 }
 
 .page_not_live {
-	border: 1px solid #A00027;
-	color: #A00027;
-	background: #FFB1B1;
-	padding:3px 9px;
-	font-weight:bold;
-	width:auto;
+    border: 1px solid #A00027;
+    color: #A00027;
+    background: #FFB1B1;
+    padding:3px 9px;
+    font-weight:bold;
+    width:auto;
 }
+
+// font and other crap resets
+
+ul, ol {
+    list-style: none;
+    }
+h1, h2, h3, h4, h5, h6, pre, code, p {
+    font-size: 1em;
+    }
+ul, ol, dl, li, dt, dd, h1, h2, h3, h4, h5, h6, pre,
+form, body, html, p, blockquote, fieldset, input, #menu, menu, nav, section {
+    padding: 0;
+    margin: 0;
+    }
+a img, :link img, :visited img {
+    border: none;
+    }
+address {
+    font-style: normal;
+    }

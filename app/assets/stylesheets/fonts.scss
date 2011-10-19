@@ -1,23 +1,44 @@
+* {
+    text-decoration: none;
+}
 body {
-	// font-family: GillSans, Calibri, Trebuchet, sans-serif;
-	// font-size: 100%;
+    font-family: Verdana, Tahoma, Arial, sans-serif;
+    font-size: 14px;
+}
 
-	// font-family: "Palatino Linotype",
-	//              Palatino,
-	//              "URW Palladio L",
-	//              "Book Antiqua",
-	//              Baskerville,
-	//              "Bookman Old Style",
-	//              "Bitstream Charter",
-	//              "Nimbus Roman No9 L",
-	//              Garamond,
-	//              "New Century Schoolbook",
-	//              "Century Schoolbook",
-	//              "Century Schoolbook L",
-	//              Georgia,
-	//              serif;
+a {
+    text-decoration: underline;
+}
+
+#menu, menu, .actions, h1, h2, h3, h4 {
+    font-family: Questrial;
+    font-weight: 400;
+}
+
+#menu {
+    font-size: 16px;
+}
+
+menu, .actions {
+    font-size: 15px;
+}
+
+#body_content_left *, #body_content_right *, .page_part_body, .page_part_side_body {
+    line-height: 22px;
+}
 
 
-	font-family: Verdana, Tahoma, Arial, sans-serif;
-	font-size: 14px;
+#header #logo {
+    font-size: 35px;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
 }

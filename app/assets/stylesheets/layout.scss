@@ -1,16 +1,18 @@
+//// BODY
+
 #page, #site_bar_content, footer, header {
-  width: 1000px;
-  margin: 0px auto;
-  clear:both;
+    width: 1000px;
+    margin: 0px auto;
+    clear:both;
 }
 
 
 #body_content_left {
-  float: left;
-  width: 600px;
-  .inner {
-    padding-right: 10px;
-  }
+    float: left;
+    width: 600px;
+    .inner {
+        padding-right: 10px;
+    }
 }
 #body_content_right {
   float: right;
@@ -20,31 +22,12 @@
   }
 }
 #body_content.no_body_content_left #body_content_right,
-  #body_content.no_body_content_right #body_content_left {
-  width: 100%;
-  padding-left: 0px;
-  padding-right: 0px;
+    #body_content.no_body_content_right #body_content_left {
+    width: 100%;
+    padding-left: 0px;
+    padding-right: 0px;
 }
-.menu {
-  ul {
-    margin: 0px;
-    padding: 0px;
-  }
-  li {
-    padding: 0px;
-    margin: 0px 9px 0px 0px;
-    list-style: none;
-    float: left;
-    &.last {
-      margin-right: 0px;
-    }
-    &.selected {
-      > a {
-        font-weight: bold;
-      }
-    }
-  }
-}
+
 
 #body_content_left p, #body_content_right p, .page_part_body p, .page_part_side_body p {
     margin-bottom: 12px;
@@ -66,43 +49,55 @@
     margin: 0px auto;
 }
 
+
+//// HEADER
+
+
 #header {
     clear:both;
+    #logo {
+        padding: 8px;
+        padding-bottom: 4px;
+    }
 }
 
-#header_content {
-    position: relative;
-    height: 132px;
-}
-
-
-#header_content h1, #header_content #menu {
-    position: absolute;
-    bottom: 30px;
-    margin: 0px;
-}
-#header_content #menu {
-    right: 0px;
-    padding: 0px;
-}
 #language_switcher {
     float:right;
     padding-top:15px;
 }
 
-#menu li, #menu > a, #menu div {
-    float: left;
-    list-style: none;
-    position: relative;
-}
 
 
-#header_content h1, #header_content h1 a {
-    left: 0px;
+//// MENUS
+
+// refinery: nav#menu.menu.clearfix ul li.selected a
+// forem: menu a
+
+#menu, menu {
+    li, div, > a {
+        float: left;
+        list-style: none;
+        position: relative;
+        margin: 0;
+        padding: 0;
+    }
 }
-#menu a, #menu li:hover ul li a, #menu a:hover nav a {
+
+menu a, #menu a, #menu li:hover ul li a, #menu a:hover nav a {
     display: block;
     padding: 10px 18px;
+}
+
+menu{
+    margin: 0;
+    margin-top: 15px;
+    padding: 0;
+    a {
+        padding: 5px;
+        text-decoration: none;
+        margin: 0;
+        margin-right: 6px;
+    }
 }
 
 #menu li ul, #menu nav {
@@ -112,8 +107,8 @@
     margin: 0px;
     min-width: 140px;
     max-width: 300px;
-    background: white;
 }
+
 #menu li ul li, #menu nav a {
     float: left;
 }
@@ -121,6 +116,25 @@
 #menu li:hover ul, #menu div:hover nav {
     left: auto;
 }
+
+
+.menu {
+  ul {
+    margin: 0px;
+    padding: 0px;
+  }
+  li {
+    padding: 0px;
+    margin: 0px 9px 0px 0px;
+    float: left;
+    &.last {
+        margin-right: 0px;
+    }
+  }
+}
+
+//// FOOTER
+
 #footer, footer {
     margin-top: 120px;
     clear:both;
@@ -130,6 +144,9 @@
     height: 103px;
     padding-top: 94px;
 }
+
+
+//// INQUIRIES
 
 .inquiries .field input, .inquiries textarea {
   border: 1px solid #75766f;
