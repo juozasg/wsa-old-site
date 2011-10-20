@@ -21,6 +21,8 @@ gem 'jquery-rails'
 gem 'execjs'
 gem 'therubyracer', '0.9.6'
 
+gem 'sanitize'
+
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -52,6 +54,7 @@ gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.gi
 
 # Add i18n support (optional, you can remove this if you really want to).
 # gem 'refinerycms-i18n',           '~> 2.0.0', :git => 'git://github.com/parndt/refinerycms-i18n'
-gem 'forem', :git => "git://github.com/juozasg/forem.git"
+# gem 'forem', :git => "git://github.com/juozasg/forem.git"
+gem 'forem', :git => "/Users/jgaigalas/src/forem"
 
 # END USER DEFINED
