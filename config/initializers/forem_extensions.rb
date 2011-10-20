@@ -7,3 +7,13 @@ Rails.application.config.to_prepare do
     include Forem::ForumsControllerExtension
   end
 end
+
+module Forem
+  module FormattingHelper
+    def as_formatted_html(text)
+      ("<br/>" + text + "<br/>").html_safe
+    end
+  end
+end
+
+

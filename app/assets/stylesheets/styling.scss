@@ -23,6 +23,13 @@ a:visited {
     color: $visited-text
 }
 
+blockquote {
+    padding-left: 10px;
+    margin-left: 25px;
+    border-left: 3px solid #444;
+    font-style: italic;
+}
+
 #body_content_title, #forums_title {
     display: block;
     background-color: $light-bg1;

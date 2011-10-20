@@ -14,6 +14,11 @@
   }
 }
 
+#new_post_title {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 #topic, #forum {
   h2{
     padding: .5em;
@@ -45,7 +50,7 @@
 }
 
 #posts{
-
+  margin-bottom: 20px;
   .even{
     background-color: $light-bg1;
   }
@@ -148,12 +153,12 @@ table.subdued{
     .subject{
     }
     .started-by{
-      font-size: .7em;
+      font-size: 90%;
       color: $lighter-text;
     }
     .latest-post{
-      font-size: .7em;
-      width: 80px;
+      font-size: 90%;
+      width: 140px;
       a{
         text-decoration: none;
         &:hover{
@@ -162,8 +167,7 @@ table.subdued{
       }
     }
     .posts-count, .views-count{
-      font-size: .8em;
-      width: 80px;
+      width: 100px;
     }
   }
 }
