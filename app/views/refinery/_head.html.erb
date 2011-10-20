@@ -12,7 +12,6 @@
   <%= stylesheet_link_tag "application", "formatting", "theme" %>
   <%= stylesheet_link_tag "home" if home_page? %>
 
-
   <%= yield :stylesheets %>
 
   <%= render :partial => '/refinery/html5shiv' %>
@@ -21,8 +20,3 @@
   <%= javascript_include_tag 'modernizr-min' %>
   <%= javascript_include_tag "application" %>
 </head>
-
-<script src="/assets/refinery/boot_wym.js?body=1" type="text/javascript"></script>
-<script src="/assets/refinery/wymeditor.js?body=1" type="text/javascript"></script>
-<script src="/assets/wymeditor/lang/en.js?body=1" type="text/javascript"></script>
-<script src="/assets/wymeditor/skins/refinery/skin.js?body=1" type="text/javascript"></script>
