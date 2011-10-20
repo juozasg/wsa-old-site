@@ -209,7 +209,7 @@ table.subdued{
     display: block;
     font-style: italic;
     position: absolute;
-    top: 5px;
+    top: 0px;
     right: 5px;
     a {
         color: $lighter-text;
@@ -219,4 +219,12 @@ table.subdued{
     a:hover {
         text-decoration: underline;
     }
+}
+
+#new_forem_post .GENTICS_editable {
+    border: 1px solid black;
+    min-height: 300px;
+    padding: 5px;
+    padding-left: 12px;
+    margin-top: 25px;
 }

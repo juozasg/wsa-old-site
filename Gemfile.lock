@@ -1,6 +1,6 @@
 GIT
   remote: /Users/jgaigalas/src/forem
-  revision: 461dfd51d836ce28f28d984a99d7174fbcbdf74f
+  revision: 766c1e3fcc5cca7124bf88ccf3a5a0118a1debf1
   specs:
     forem (0.1)
       rails (~> 3.1.0)

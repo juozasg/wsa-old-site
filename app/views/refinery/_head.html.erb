@@ -17,6 +17,15 @@
   <%= render :partial => '/refinery/html5shiv' %>
   <%= render :partial => '/refinery/google_analytics' %>
 
-  <%= javascript_include_tag 'modernizr-min' %>
   <%= javascript_include_tag "application" %>
+
+  <script type="text/javascript" src="/aloha/aloha.js"></script>
+  <script type="text/javascript" src="/aloha/plugins/com.gentics.aloha.plugins.Format/plugin.js"></script>
+  <script type="text/javascript" src="/aloha/plugins/com.gentics.aloha.plugins.Link/plugin.js"></script>
+  <script type="text/javascript" src="/aloha/plugins/com.gentics.aloha.plugins.Table/plugin.js"></script>
+  <script type="text/javascript" src="/aloha/plugins/com.gentics.aloha.plugins.List/plugin.js"></script>
+
+  <%= javascript_include_tag "inline_editor" %>
+
+  <%= javascript_include_tag 'modernizr-min' %>
 </head>
