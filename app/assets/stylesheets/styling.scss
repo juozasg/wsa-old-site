@@ -68,6 +68,11 @@ menu {
     color: $default-text;
 }
 
+input.string {
+    height: 20px;
+    margin-bottom: 0;
+    width: 100%;
+}
 //
 // #menu a, #menu li:hover ul li a, #menu a:hover nav a {
 //     color: #969792;

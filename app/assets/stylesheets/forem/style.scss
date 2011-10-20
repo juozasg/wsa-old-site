@@ -221,7 +221,11 @@ table.subdued{
     }
 }
 
-#new_forem_post .GENTICS_editable {
+#new_forem_topic div.input {
+    margin-top: 20px;
+}
+
+.GENTICS_editable {
     border: 1px solid black;
     min-height: 300px;
     padding: 5px;

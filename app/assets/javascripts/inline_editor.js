@@ -19,16 +19,7 @@ GENTICS.Aloha.settings = {
 };
 
 jQuery(document).ready(function($) {
-
-  $("#new_forem_post textarea").each(function(index) {
-
-    var self = $(this);
-    // var postId = self.attr("data-id");
-    // var postField = self.attr("data-field");
-
-    // add callbacks to update post data fields:
-    self.aloha();
-    editable = self;
+  $("#new_forem_post textarea, #new_forem_topic textarea").each(function(index) {
+    var self = $(this).aloha();
   });
-
 });
