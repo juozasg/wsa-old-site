@@ -11,7 +11,9 @@ end
 module Forem
   module FormattingHelper
     def as_formatted_html(text)
-      ("<br/>" + text + "<br/>").html_safe
+      cleaned = Sanitize.clean(text, Sanitize::Config::RELAXED)
+
+      ("<br/>" + cleaned + "<br/>").html_safe
     end
   end
 end
