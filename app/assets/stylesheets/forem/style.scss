@@ -19,11 +19,12 @@
     margin-bottom: 10px;
 }
 
-#forum menu a {
+#forum menu a, #topic menu a {
     font-size: 140%;
     border-radius: 0 8px 8px;
     -moz-border-radius: 0 8px 8px;
     border: 1px solid #444;
+    margin-bottom: 12px;
 }
 
 #topic, #forum {
@@ -246,9 +247,10 @@ table.subdued{
 }
 
 .GENTICS_editable {
-    border: 1px solid black;
+    border: 1px solid #444;
     min-height: 300px;
     padding: 5px;
     padding-left: 12px;
     margin-top: 25px;
+    background-color: white;
 }

@@ -114,10 +114,24 @@ input.string {
 // }
 
 
-
 #footer, footer {
 }
 
+textarea {
+    background-color: white;
+}
+
+form input {
+    font-size: 140%;
+    font-family: Questrial;
+    background-color: white;
+    margin: 5px 0;
+    padding: 8px;
+}
+
+.error {
+    color: #c00;
+}
 .inquiries .field input, .inquiries textarea {
     border: 1px solid #75766f;
 }
