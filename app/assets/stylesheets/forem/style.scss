@@ -149,6 +149,7 @@ table.subdued{
     }
     &:hover{
       text-decoration: underline;
+      color: $lighter-text;
     }
   }
   td, th{
