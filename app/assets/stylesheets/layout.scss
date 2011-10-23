@@ -12,10 +12,10 @@ label {
     clear:both;
 }
 
-#body_content_title {
-    margin-left: -5px;
-    margin-right: -5px;
+header, #header {
+    width: 998px;
 }
+
 
 #body_content_title, #forums_title {
     padding: 8px;
@@ -25,15 +25,17 @@ label {
 #body_content_left {
     float: left;
     width: 600px;
+    min-height: 400px;
     .inner {
-        padding-right: 10px;
+        padding: 10px;
     }
 }
 #body_content_right {
   float: right;
   width: 400px;
+  min-height: 400px;
   .inner {
-    padding-left: 10px;
+    padding: 10px;
   }
 }
 #body_content.no_body_content_left #body_content_right,
@@ -64,6 +66,11 @@ label {
     width: 990px;
     margin: 0px auto;
 }
+
+#body_content {
+    width: 1000px;
+}
+
 
 
 //// HEADER

@@ -23,6 +23,10 @@ a:visited {
     color: $visited-text
 }
 
+body {
+    background-image: url("/images/stripe.png");
+}
+
 #page blockquote {
     padding-left: 10px;
     margin-left: 25px;
@@ -52,6 +56,16 @@ a:visited {
     }
 }
 
+header, #header {
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+}
+
+
+#body_content_title, #forum > h2:first-child, #topic > h2:first-child {
+    border: 1px solid #ccc;
+    border-top: none;
+}
 
 #menu, menu {
     li, div, > a {
@@ -72,6 +86,10 @@ input.string {
     height: 20px;
     margin-bottom: 0;
     width: 100%;
+}
+
+#body_content_left, #body_content_right {
+    background-color: white;
 }
 //
 // #menu a, #menu li:hover ul li a, #menu a:hover nav a {
