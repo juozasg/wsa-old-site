@@ -6,6 +6,14 @@ Rails.application.config.to_prepare do
   Forem::ForumsController.class_eval do
     include Forem::ForumsControllerExtension
   end
+
+  Forem::Forum.class_eval do
+    has_friendly_id :title, :use_slug => true, :approximate_ascii => true
+  end
+
+  Forem::Topic.class_eval do
+    has_friendly_id :subject, :use_slug => true, :approximate_ascii => true
+  end
 end
 
 module Forem
