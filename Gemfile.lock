@@ -1,6 +1,6 @@
 GIT
   remote: /Users/jgaigalas/src/forem
-  revision: 55279ab7fb221113637c871127fab206a131e44e
+  revision: 6a72a7fee1860438eed47f44a1c2386824237150
   specs:
     forem (0.1)
       rails (~> 3.1.0)
@@ -170,7 +170,7 @@ GEM
       rdoc (~> 3.4)
       thor (~> 0.14.6)
     raindrops (0.7.0)
-    rake (0.9.2)
+    rake (0.9.2.2)
     rbx-require-relative (0.0.5)
     rdoc (3.11)
       json (~> 1.4)
