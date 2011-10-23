@@ -1,3 +1,0 @@
-[submodule "vendor/engines/refinerycms_membership"]
-	path = vendor/engines/refinerycms_membership
-	url = git@github.com:juozasg/refinerycms_membership.git
