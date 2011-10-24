@@ -27,6 +27,13 @@ a:hover {
     color: $lighter-text;
 }
 
+strong, caption {
+    text-weight: bold;
+}
+
+em {
+    font-style: italic;
+}
 
 body {
     background-image: url("/images/stripe.png");
