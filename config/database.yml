@@ -1,5 +1,5 @@
 # MySQL.  Versions 4.1 and 5.0 are recommended.
-# 
+#
 # Install the MYSQL driver
 #   gem install mysql2
 #
@@ -39,4 +39,4 @@ production:
   pool: 5
   username: root
   password: ""
-  socket: /tmp/mysql.sock
+  socket: /var/run/mysqld/mysqld.sock
