@@ -1,3 +1,6 @@
+# precompiled assets
+public/assets
+
 .bundle
 db/*.sqlite3
 log/*.log
@@ -79,4 +82,5 @@ capybara-*html
 #rvm
 .rvmrc
 .rvmrc.*
+
 
