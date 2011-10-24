@@ -10,6 +10,14 @@ a {
     text-decoration: underline;
 }
 
+#page strong, #page caption {
+    font-weight: bold;
+}
+
+#page em {
+    font-style: italic;
+}
+
 #menu, menu, .actions, h1, h2, h3, h4 {
     font-family: Questrial;
     font-weight: 400;

@@ -27,16 +27,14 @@ a:hover {
     color: $lighter-text;
 }
 
-body strong, body caption {
-    text-weight: bold;
-}
-
-body em {
-    font-style: italic;
-}
 
 body {
     background-image: url("/images/stripe.png");
+}
+
+
+#page h3 {
+    margin-bottom: 12px;
 }
 
 #page blockquote {
