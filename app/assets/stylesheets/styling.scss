@@ -27,11 +27,11 @@ a:hover {
     color: $lighter-text;
 }
 
-strong, caption {
+body strong, body caption {
     text-weight: bold;
 }
 
-em {
+body em {
     font-style: italic;
 }
 
