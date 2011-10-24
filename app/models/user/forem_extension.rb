@@ -1,5 +1,5 @@
 module User::ForemExtension
   def forem_admin?
-    true
+    has_role?(:superuser)
   end
 end
