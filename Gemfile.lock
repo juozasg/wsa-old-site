@@ -1,5 +1,5 @@
 GIT
-  remote: /Users/jgaigalas/src/forem
+  remote: git://github.com/juozasg/forem.git
   revision: 71a6bf623ed023013dac7b6cf2e70159b3d9ff0c
   specs:
     forem (0.1)
@@ -137,7 +137,7 @@ GEM
       i18n (>= 0.4.0)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
-    mime-types (1.16)
+    mime-types (1.17.1)
     multi_json (1.0.3)
     mysql2 (0.3.7)
     nokogiri (1.5.0)
