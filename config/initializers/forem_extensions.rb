@@ -14,16 +14,15 @@ Rails.application.config.to_prepare do
   Forem::Topic.class_eval do
     has_friendly_id :subject, :use_slug => true, :approximate_ascii => true
   end
-end
 
-module Forem
-  module FormattingHelper
-    def as_formatted_html(text)
-      cleaned = Sanitize.clean(text, Sanitize::Config::RELAXED)
+  module Forem
+    module FormattingHelper
+      def as_formatted_html(text)
+        cleaned = Sanitize.clean(text, Sanitize::Config::RELAXED)
 
-      ("<br/>" + cleaned).html_safe
+        ("<br/>" + cleaned).html_safe
+      end
     end
   end
+
 end
-
-
