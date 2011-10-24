@@ -19,7 +19,7 @@ listen 8080, :tcp_nopush => true
 timeout 30
 
 # feel free to point this anywhere accessible on the filesystem
-pid "/tmp/pids/unicorn.pid"
+pid "/var/run/unicorn.pid"
 
 stderr_path "/var/log/unicorn/#{app_name}.stderr.log"
 stdout_path "/var/log/unicorn/#{app_name}.stdout.log"
