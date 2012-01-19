@@ -1,1 +1,1 @@
-Forem.user_class = Refinery::User
+Forem.user_class = "Refinery::User"
