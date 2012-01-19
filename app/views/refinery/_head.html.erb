@@ -8,7 +8,6 @@
   <%= csrf_meta_tags if ::Refinery::Setting.find_or_set(:authenticity_token_on_frontend, true)-%>
   <%= yield :meta %>
 
-  <link href='http://fonts.googleapis.com/css?family=Questrial' rel='stylesheet' type='text/css'>
   <%= stylesheet_link_tag "application" %>
   <%= stylesheet_link_tag "home" if home_page? %>
 

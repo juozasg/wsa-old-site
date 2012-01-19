@@ -18,17 +18,25 @@ a {
     font-style: italic;
 }
 
-#menu, menu, .actions, h1, h2, h3, h4 {
-    font-family: Questrial;
-    font-weight: 400;
+#logo {
+    font-family: QuicksandBold, Arial, sans-serif;
 }
+
+#menu, menu, .actions, h1, h2, h3, h4 {
+    font-family: QuicksandBook, Arial, sans-serif;
+}
+
 
 #menu {
     font-size: 16px;
 }
 
-menu, .actions {
+menu {
     font-size: 15px;
+}
+
+.actions {
+    font-size: 12px;
 }
 
 #body_content_left *, #body_content_right *, .page_part_body, .page_part_side_body {
