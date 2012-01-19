@@ -10,11 +10,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20111009055143) do
+ActiveRecord::Schema.define(:version => 20120119212514) do
+
+  create_table "forem_categories", :force => true do |t|
+    t.string   "name",       :null => false
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
 
   create_table "forem_forums", :force => true do |t|
-    t.string "title"
-    t.text   "description"
+    t.string  "title"
+    t.text    "description"
+    t.integer "category_id"
   end
 
   create_table "forem_posts", :force => true do |t|
@@ -24,6 +31,15 @@ ActiveRecord::Schema.define(:version => 20111009055143) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "reply_to_id"
+  end
+
+  add_index "forem_posts", ["reply_to_id"], :name => "index_forem_posts_on_reply_to_id"
+  add_index "forem_posts", ["topic_id"], :name => "index_forem_posts_on_topic_id"
+  add_index "forem_posts", ["user_id"], :name => "index_forem_posts_on_user_id"
+
+  create_table "forem_subscriptions", :force => true do |t|
+    t.integer "subscriber_id"
+    t.integer "topic_id"
   end
 
   create_table "forem_topics", :force => true do |t|
@@ -37,6 +53,9 @@ ActiveRecord::Schema.define(:version => 20111009055143) do
     t.boolean  "hidden",     :default => false
   end
 
+  add_index "forem_topics", ["forum_id"], :name => "index_forem_topics_on_forum_id"
+  add_index "forem_topics", ["user_id"], :name => "index_forem_topics_on_user_id"
+
   create_table "forem_views", :force => true do |t|
     t.integer  "user_id"
     t.integer  "topic_id"
@@ -44,6 +63,10 @@ ActiveRecord::Schema.define(:version => 20111009055143) do
     t.datetime "updated_at"
     t.integer  "count",      :default => 0
   end
+
+  add_index "forem_views", ["topic_id"], :name => "index_forem_views_on_topic_id"
+  add_index "forem_views", ["updated_at"], :name => "index_forem_views_on_updated_at"
+  add_index "forem_views", ["user_id"], :name => "index_forem_views_on_user_id"
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
