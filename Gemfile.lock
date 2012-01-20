@@ -1,6 +1,6 @@
 GIT
   remote: git://github.com/juozasg/forem.git
-  revision: 72a946aaa973719f048d56654560ef27a08920fe
+  revision: f3dcd9e6eddae5e7a43e0de150506860e38c1bea
   specs:
     forem (0.1)
       cancan
