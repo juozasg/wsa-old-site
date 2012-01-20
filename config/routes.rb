@@ -53,6 +53,7 @@ Members::Application.routes.draw do
   # See how all your routes lay out with "rake routes"
 
   match 'sign_in' => redirect('/refinery/users/login')
+  resources :users
   mount Forem::Engine, :at => "forums"
 
   # This is a legacy wild controller route that's not recommended for RESTful applications.
