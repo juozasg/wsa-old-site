@@ -19,7 +19,7 @@ GENTICS.Aloha.settings = {
 };
 
 jQuery(document).ready(function($) {
-  $("#new_forem_post textarea, #new_forem_topic textarea").each(function(index) {
+  $("textarea#post_text, #new_forem_topic textarea").each(function(index) {
     var self = $(this).aloha();
   });
 });

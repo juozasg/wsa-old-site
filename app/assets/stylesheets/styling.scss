@@ -27,6 +27,18 @@ a:hover {
     color: $lighter-text;
 }
 
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-spacing: 0px;
+    border-collapse: collapse;
+}
+table td {
+    border: 1px solid #444;
+    padding: 2px;
+}
 
 body {
     background: url("/images/bgnoise.png") repeat scroll 0 0 #fff;
