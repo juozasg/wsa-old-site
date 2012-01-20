@@ -83,7 +83,6 @@
         font-weight: bold;
       }
       .icon{
-        background: transparent url(http://placekitten.com/50/50) no-repeat;
         width: 50px;
         height: 50px;
         display: inline-block;
@@ -127,10 +126,10 @@
             text-align: center;
             display: block;
             text-decoration: none;
-            color: $default-text;
-            background-color: $mid-bg1;
+            color: white;
+            background-color: $mid-bg2;
             &:hover{
-              background-color: $mid-bg1-highlight;
+              background-color: $mid-bg2-highlight;
             }
           }
         }
