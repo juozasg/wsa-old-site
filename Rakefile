@@ -4,4 +4,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Members::Application.load_tasks
+MembersSite::Application.load_tasks
