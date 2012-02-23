@@ -1,4 +1,4 @@
-module User::ForemExtension
+module Refinery::User::ForemExtension
   def forem_admin?
     has_role?(:superuser)
   end

@@ -44,12 +44,12 @@ module Refinery
         ActionView::Base.send :include, RailsDatatables
 
         # make users and members two different classes
-        User.class_eval do
+        Refinery::User.class_eval do
           set_inheritance_column :membership_level
         end
 
 
-        Role.class_eval do
+        Refinery::Role.class_eval do
           has_and_belongs_to_many :pages
           validates_presence_of :title
           acts_as_indexed :fields => [:title]

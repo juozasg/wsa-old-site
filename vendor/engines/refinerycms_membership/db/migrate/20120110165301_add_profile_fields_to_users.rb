@@ -13,7 +13,7 @@ class AddProfileFieldsToUsers < ActiveRecord::Migration
     add_column ::Refinery::User.table_name, :province, :integer
     add_column ::Refinery::User.table_name, :postal_code, :string
     add_column ::Refinery::User.table_name, :member_until, :datetime
-    add_column ::Refinery::User.table_name, :membership_level, :string, :default => 'User'
+    add_column ::Refinery::User.table_name, :membership_level, :string, :default => 'Refinery::User'
   end
 
   def self.down
