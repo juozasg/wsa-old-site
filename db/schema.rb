@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120119212514) do
+ActiveRecord::Schema.define(:version => 20120223031111) do
 
   create_table "forem_categories", :force => true do |t|
     t.string   "name",       :null => false
@@ -67,6 +67,51 @@ ActiveRecord::Schema.define(:version => 20120119212514) do
   add_index "forem_views", ["topic_id"], :name => "index_forem_views_on_topic_id"
   add_index "forem_views", ["updated_at"], :name => "index_forem_views_on_updated_at"
   add_index "forem_views", ["user_id"], :name => "index_forem_views_on_user_id"
+
+  create_table "membership_email_part_translations", :force => true do |t|
+    t.integer  "membership_email_part_id"
+    t.string   "locale"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "membership_email_part_translations", ["membership_email_part_id"], :name => "index_484ca56663526948d4f72cbcbeccd9df585fdb84"
+
+  create_table "membership_email_parts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "membership_email_parts", ["title"], :name => "index_membership_email_parts_on_title", :unique => true
+
+  create_table "membership_email_translations", :force => true do |t|
+    t.integer  "membership_email_id"
+    t.string   "locale"
+    t.text     "body"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "membership_email_translations", ["membership_email_id"], :name => "index_2b14ae490c30075ad56da2475569e4a2ccf0cdd9"
+
+  create_table "membership_emails", :force => true do |t|
+    t.string   "title"
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "membership_emails", ["title"], :name => "index_membership_emails_on_title", :unique => true
+
+  create_table "pages_roles", :id => false, :force => true do |t|
+    t.integer "page_id"
+    t.integer "role_id"
+  end
 
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
@@ -185,9 +230,9 @@ ActiveRecord::Schema.define(:version => 20120119212514) do
   add_index "refinery_user_plugins", ["user_id", "name"], :name => "index_unique_refinery_user_plugins", :unique => true
 
   create_table "refinery_users", :force => true do |t|
-    t.string   "username",             :null => false
-    t.string   "email",                :null => false
-    t.string   "encrypted_password",   :null => false
+    t.string   "username",                                      :null => false
+    t.string   "email",                                         :null => false
+    t.string   "encrypted_password",                            :null => false
     t.string   "persistence_token"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -201,6 +246,25 @@ ActiveRecord::Schema.define(:version => 20120119212514) do
     t.string   "reset_password_token"
     t.datetime "remember_created_at"
     t.string   "other_names"
+    t.string   "first_name"
+    t.string   "last_name"
+    t.string   "title"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "website"
+    t.string   "organization"
+    t.string   "street_address"
+    t.string   "city"
+    t.integer  "province"
+    t.string   "postal_code"
+    t.datetime "member_until"
+    t.string   "membership_level",     :default => "User"
+    t.boolean  "enabled",              :default => false
+    t.boolean  "seen",                 :default => false
+    t.string   "rejected",             :default => "UNDECIDED"
+    t.string   "confirmation_token"
+    t.datetime "confirmed_at"
+    t.datetime "confirmation_sent_at"
   end
 
   add_index "refinery_users", ["id"], :name => "index_refinery_users_on_id"
