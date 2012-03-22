@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20120223031111) do
+ActiveRecord::Schema.define(:version => 20120322223839) do
 
   create_table "forem_categories", :force => true do |t|
     t.string   "name",       :null => false
@@ -68,51 +68,6 @@ ActiveRecord::Schema.define(:version => 20120223031111) do
   add_index "forem_views", ["updated_at"], :name => "index_forem_views_on_updated_at"
   add_index "forem_views", ["user_id"], :name => "index_forem_views_on_user_id"
 
-  create_table "membership_email_part_translations", :force => true do |t|
-    t.integer  "membership_email_part_id"
-    t.string   "locale"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "membership_email_part_translations", ["membership_email_part_id"], :name => "index_484ca56663526948d4f72cbcbeccd9df585fdb84"
-
-  create_table "membership_email_parts", :force => true do |t|
-    t.string   "title"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "membership_email_parts", ["title"], :name => "index_membership_email_parts_on_title", :unique => true
-
-  create_table "membership_email_translations", :force => true do |t|
-    t.integer  "membership_email_id"
-    t.string   "locale"
-    t.text     "body"
-    t.string   "subject"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "membership_email_translations", ["membership_email_id"], :name => "index_2b14ae490c30075ad56da2475569e4a2ccf0cdd9"
-
-  create_table "membership_emails", :force => true do |t|
-    t.string   "title"
-    t.string   "subject"
-    t.text     "body"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
-
-  add_index "membership_emails", ["title"], :name => "index_membership_emails_on_title", :unique => true
-
-  create_table "pages_roles", :id => false, :force => true do |t|
-    t.integer "page_id"
-    t.integer "role_id"
-  end
-
   create_table "refinery_images", :force => true do |t|
     t.string   "image_mime_type"
     t.string   "image_name"
@@ -123,6 +78,51 @@ ActiveRecord::Schema.define(:version => 20120223031111) do
     t.datetime "updated_at"
     t.string   "image_uid"
     t.string   "image_ext"
+  end
+
+  create_table "refinery_memberships_membership_email_part_translations", :force => true do |t|
+    t.integer  "refinery_memberships_membership_email_part_id"
+    t.string   "locale"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "refinery_memberships_membership_email_part_translations", ["refinery_memberships_membership_email_part_id"], :name => "index_7f8a07625fcf6fbffa30a6728065334a879568b3"
+
+  create_table "refinery_memberships_membership_email_parts", :force => true do |t|
+    t.string   "title"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "refinery_memberships_membership_email_parts", ["title"], :name => "index_refinery_memberships_membership_email_parts_on_title", :unique => true
+
+  create_table "refinery_memberships_membership_email_translations", :force => true do |t|
+    t.integer  "refinery_memberships_membership_email_id"
+    t.string   "locale"
+    t.text     "body"
+    t.string   "subject"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "refinery_memberships_membership_email_translations", ["refinery_memberships_membership_email_id"], :name => "index_452816dd303fa6362a8b5716cf845ac2e32a47b6"
+
+  create_table "refinery_memberships_membership_emails", :force => true do |t|
+    t.string   "title"
+    t.string   "subject"
+    t.text     "body"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  add_index "refinery_memberships_membership_emails", ["title"], :name => "index_refinery_memberships_membership_emails_on_title", :unique => true
+
+  create_table "refinery_memberships_pages_roles", :id => false, :force => true do |t|
+    t.integer "page_id"
+    t.integer "role_id"
   end
 
   create_table "refinery_page_part_translations", :force => true do |t|
