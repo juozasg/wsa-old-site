@@ -230,9 +230,9 @@ ActiveRecord::Schema.define(:version => 20120223031111) do
   add_index "refinery_user_plugins", ["user_id", "name"], :name => "index_unique_refinery_user_plugins", :unique => true
 
   create_table "refinery_users", :force => true do |t|
-    t.string   "username",                                      :null => false
-    t.string   "email",                                         :null => false
-    t.string   "encrypted_password",                            :null => false
+    t.string   "username",                                           :null => false
+    t.string   "email",                                              :null => false
+    t.string   "encrypted_password",                                 :null => false
     t.string   "persistence_token"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -258,7 +258,7 @@ ActiveRecord::Schema.define(:version => 20120223031111) do
     t.integer  "province"
     t.string   "postal_code"
     t.datetime "member_until"
-    t.string   "membership_level",     :default => "User"
+    t.string   "membership_level",     :default => "Refinery::User"
     t.boolean  "enabled",              :default => false
     t.boolean  "seen",                 :default => false
     t.string   "rejected",             :default => "UNDECIDED"
