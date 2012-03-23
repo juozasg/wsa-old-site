@@ -1,6 +1,6 @@
 source 'http://rubygems.org'
 
-gem 'rails', '~> 3.1.1.rc2'
+gem 'rails', '~> 3.2.0'
 
 # Bundle edge Rails instead:
 # gem 'rails',     :git => 'git://github.com/rails/rails.git'
@@ -12,8 +12,8 @@ gem 'json'
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
-  gem 'sass-rails',   '~> 3.1.0'
-  gem 'coffee-rails', '~> 3.1.0'
+  gem 'sass-rails',   '~> 3.2.0'
+  gem 'coffee-rails', '~> 3.2.0'
   gem 'uglifier', '>= 1.0.3'
 end
 
@@ -39,12 +39,13 @@ gem 'ruby-debug'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.git'
+gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
 
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
 
+gem 'refinerycms-memberships', '2.0', :path => '/Users/jgaigalas/src/refinerycms_membership'
 
 # Specify additional Refinery CMS Engines here (all optional):
 # gem 'refinerycms-inquiries',    '~> 1.0'
@@ -58,3 +59,4 @@ gem 'forem', :git => "git://github.com/juozasg/forem.git"
 # gem 'forem', :git => "/Users/jgaigalas/src/forem"
 
 # END USER DEFINED
+
