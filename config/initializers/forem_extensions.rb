@@ -8,11 +8,13 @@ Rails.application.config.to_prepare do
   end
 
   Forem::Forum.class_eval do
-    has_friendly_id :title, :use_slug => true, :approximate_ascii => true
+    extend FriendlyId
+    friendly_id :title, :use => :history
   end
 
   Forem::Topic.class_eval do
-    has_friendly_id :subject, :use_slug => true, :approximate_ascii => true
+    extend FriendlyId
+    friendly_id :subject, :use => :history
   end
 
   module Forem
