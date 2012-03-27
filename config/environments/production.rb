@@ -1,4 +1,8 @@
 MembersSite::Application.configure do
+
+  # Refinery has set config.assets.initialize_on_precompile = false by default.
+  config.assets.initialize_on_precompile = false
+
   # Settings specified here will take precedence over those in config/application.rb
 
   # Code is not reloaded between requests
@@ -33,8 +37,11 @@ MembersSite::Application.configure do
   # See everything in the log (default is :info)
   # config.log_level = :debug
 
+  # Prepend all log lines with the following tags
+  # config.log_tags = [ :subdomain, :uuid ]
+
   # Use a different logger for distributed setups
-  # config.logger = SyslogLogger.new
+  # config.logger = ActiveSupport::TaggedLogging.new(SyslogLogger.new)
 
   # Use a different cache store in production
   # config.cache_store = :mem_cache_store
@@ -57,8 +64,8 @@ MembersSite::Application.configure do
 
   # Send deprecation notices to registered listeners
   config.active_support.deprecation = :notify
+
+  # Log the query plan for queries taking more than this (works
+  # with SQLite, MySQL, and PostgreSQL)
+  # config.active_record.auto_explain_threshold_in_seconds = 0.5
 end
-Refinery.rescue_not_found = true
-# When true will use Amazon's Simple Storage Service on your production machine
-# instead of the default file system for resources and images
-Refinery.s3_backend = !(ENV['S3_KEY'].nil? || ENV['S3_SECRET'].nil?)
