@@ -168,6 +168,7 @@ form input {
     color: $default-text;
     border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
+    display: none;
 }
 
 .flash_notice, .flash_message {
@@ -203,10 +204,8 @@ form input {
   color: #e20003;
   border-bottom-color: #e20003;
 }
-.flash.flash_error a, .flash.flash_error a:hover,
-.flash.flash_alert a, .flash.flash_alert a:hover {
-  display: none;
-}
+
+
 noscript .flash.flash_error a, noscript .flash.flash_error a:hover,
 noscript .flash.flash_alert a, noscript .flash.flash_alert a:hover {
   display: inline;
