@@ -8,7 +8,7 @@ MembersSite::Application.routes.draw do
   mount Refinery::Core::Engine, :at => '/'
 
   match 'sign_in' => redirect('/refinery/users/login')
-  resources :users
+  # resources :users
   mount Forem::Engine, :at => "forums"
 
   # The priority is based upon order of creation:

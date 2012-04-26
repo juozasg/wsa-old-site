@@ -15,7 +15,7 @@ class ApplicationController < ActionController::Base
   def force_login_user
     unless current_refinery_user.try(:has_role?, "Member")
       session['refinery_user_return_to'] = request.fullpath
-      redirect_to main_app.new_refinery_user_session_path
+      # redirect_to refinery.new_refinery_user_session_path
     end
   end
 
