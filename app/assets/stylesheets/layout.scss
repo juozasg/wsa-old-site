@@ -21,7 +21,7 @@ header, #header {
     margin-bottom: 25px;
 }
 
-#body_content_left {
+#body {
     float: left;
     width: 600px;
     min-height: 400px;
@@ -29,7 +29,7 @@ header, #header {
         padding: 10px;
     }
 }
-#body_content_right {
+#side_body {
   float: right;
   width: 400px;
   min-height: 400px;
@@ -37,15 +37,12 @@ header, #header {
     padding: 10px;
   }
 }
-#body_content.no_body_content_left #body_content_right,
-    #body_content.no_body_content_right #body_content_left {
-    width: 100%;
-    padding-left: 0px;
-    padding-right: 0px;
+
+.no_side_body #body {
+  width: 1000px;
 }
 
-
-#body_content_left p, #body_content_right p, .page_part_body p, .page_part_side_body p {
+#body p, #side_body p, .page_part_body p, .page_part_side_body p {
     margin-bottom: 12px;
 }
 
@@ -53,15 +50,15 @@ header, #header {
     margin-top: 36px;
 }
 
-#body_content_left {
+#body {
     width: 574px;
 }
-#body_content_right {
+#side_body {
     width: 396px;
 }
 
 
-#body, #body_content, #header_content, #footer_content, #site_bar_content {
+#body_content, #header_content, #footer_content, #site_bar_content {
     width: 990px;
     margin: 0px auto;
 }
