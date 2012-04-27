@@ -60,7 +60,7 @@ body {
 
 #body_content_title, #forums_title {
     display: block;
-    background-color: $light-bg1;
+    background-color: white;
 }
 
 #side_body img {
@@ -70,29 +70,40 @@ body {
 #header, header, menu, #menu {
     &, * {
         color: $darker-text;
-        background-color: $mid-bg1;
     }
     a, a:visited, a:hover {
         text-decoration: none;
         color: inherit;
     }
+    a:hover {
+      border-bottom: 1px solid $mid-bg1-highlight;
+    }
 }
 
-header, #header {
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+#header #logo {
+  color: #8ab;
 }
-
-
 #body_content_title, #forums_title, #forum > h2:first-child, #topic > h2:first-child {
     border: 1px solid #ccc;
-    border-top: none;
 }
 
 #menu, menu {
+    li.selected {
+      border: 1px solid #ccc;
+    }
+
+    li.first {
+      margin-left: -1px;
+    }
+
+    li.last {
+      margin-right: -1px;
+    }
+
     li, div, > a {
      &.selected, &.selected * {
-        background-color: $light-bg1;
+        background-color: white;
+        border-bottom: none;
       }
       &:hover, &:hover * {
           background-color: $mid-bg1-highlight;

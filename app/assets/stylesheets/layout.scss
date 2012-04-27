@@ -18,12 +18,16 @@ header, #header {
 
 #body_content_title, #forums_title {
     padding: 8px;
-    margin-bottom: 25px;
+    padding-top: 12px;
+    padding-left: 20px;
+    margin-bottom: 6px;
+    margin-right: -2px;
+    border-top: 1px solid #ccc;
 }
 
 #body {
     float: left;
-    width: 600px;
+    width: 596px;
     min-height: 400px;
     .inner {
         padding: 10px;
@@ -31,7 +35,8 @@ header, #header {
 }
 #side_body {
   float: right;
-  width: 400px;
+  width: 398px;
+  margin-right: -2px;
   min-height: 400px;
   .inner {
     padding: 10px;
@@ -48,13 +53,6 @@ header, #header {
 
 #body_content {
     margin-top: 36px;
-}
-
-#body {
-    width: 574px;
-}
-#side_body {
-    width: 396px;
 }
 
 
