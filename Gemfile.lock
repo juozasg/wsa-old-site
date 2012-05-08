@@ -53,7 +53,7 @@ GIT
       refinerycms-core (= 2.0.2)
 
 PATH
-  remote: /Users/jgaigalas/src/refinerycms_membership
+  remote: /home/juozas/src/refinerycms_membership
   specs:
     refinerycms-memberships (2.0.0)
       nokogiri (~> 1.5.0)

@@ -45,7 +45,7 @@ gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.gi
 
 # USER DEFINED
 
-gem 'refinerycms-memberships', '2.0', :path => '/Users/jgaigalas/src/refinerycms_membership'
+gem 'refinerycms-memberships', '2.0', :path => '/home/juozas/src/refinerycms_membership'
 
 # Specify additional Refinery CMS Engines here (all optional):
 # gem 'refinerycms-inquiries',    '~> 1.0'
@@ -56,7 +56,7 @@ gem 'refinerycms-memberships', '2.0', :path => '/Users/jgaigalas/src/refinerycms
 # Add i18n support (optional, you can remove this if you really want to).
 # gem 'refinerycms-i18n',           '~> 2.0.0', :git => 'git://github.com/parndt/refinerycms-i18n'
 gem 'forem', :git => "git://github.com/juozasg/forem.git"
-# gem 'forem', :git => "/Users/jgaigalas/src/forem"
+# gem 'forem', :git => "/home/juozas/src/forem"
 
 # END USER DEFINED
 
