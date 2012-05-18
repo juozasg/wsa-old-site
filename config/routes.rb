@@ -5,11 +5,11 @@ MembersSite::Application.routes.draw do
   # If you would like to change where this extension is mounted, simply change the :at option to something different.
   #
   # We ask that you don't use the :as option here, as Refinery relies on it being the default of "refinery"
+  mount Forem::Engine, :at => '/'
   mount Refinery::Core::Engine, :at => '/'
 
-  match 'sign_in' => redirect('/refinery/users/login')
+  # match 'sign_in' => redirect('/refinery/users/login')
   # resources :users
-  mount Forem::Engine, :at => "forums"
 
   # The priority is based upon order of creation:
   # first created -> highest priority.
