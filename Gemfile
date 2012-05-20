@@ -19,9 +19,11 @@ end
 
 gem 'jquery-rails'
 gem 'execjs'
-gem 'therubyracer', '0.9.6'
 
-gem 'sanitize'
+# TODO: test if rubyracer still needed execjs runtime
+# gem 'therubyracer', '0.9.6'
+
+gem 'sanitize' # for forem html formatter
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
@@ -55,8 +57,8 @@ gem 'refinerycms-memberships', '2.0', :path => '/home/juozas/src/refinerycms_mem
 
 # Add i18n support (optional, you can remove this if you really want to).
 # gem 'refinerycms-i18n',           '~> 2.0.0', :git => 'git://github.com/parndt/refinerycms-i18n'
-gem 'forem', :git => "git://github.com/juozasg/forem.git"
-# gem 'forem', :git => "/home/juozas/src/forem"
+# gem 'forem', :git => "git://github.com/juozasg/forem.git"
+gem 'forem', :git => "/home/juozas/src/forem"
 
 # END USER DEFINED
 
