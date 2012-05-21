@@ -1,3 +1,5 @@
+require 'forem_html_formatter'
+
 Forem.user_class = "Refinery::User"
 Forem.user_profile_links = true
 Forem.email_from_address = "admin@members.workersolidarity.org"
