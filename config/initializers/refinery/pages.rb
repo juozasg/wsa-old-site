@@ -46,7 +46,7 @@ Refinery::Pages.configure do |config|
 
   # config.use_view_templates = false
 
-  # config.page_title = {:chain_page_title=>false, :page_title=>{:tag=>nil, :class=>nil, :wrap_if_not_chained=>false}, :ancestors=>{:separator=>" | ", :tag=>"span", :class=>"ancestors"}}
+  # config.page_title = {:chain_page_title=>false, :page_title=>{:tag=>nil, :class=>nil, :wrap_if_not_chained=>false}, :ancestors=>{:tag=>"span", :class=>"ancestors", :separator=>" | "}}
 
   # config.absolute_page_links = false
 end
