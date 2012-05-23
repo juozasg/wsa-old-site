@@ -8,6 +8,7 @@ MembersSite::Application.routes.draw do
   mount Forem::Engine, :at => '/'
   mount Refinery::Core::Engine, :at => '/'
 
+  match '/members/:id' => 'refinery/memberships/members#show', :as => :user
   # match 'sign_in' => redirect('/refinery/users/login')
   # resources :users
 
