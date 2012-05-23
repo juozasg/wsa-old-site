@@ -1,15 +1,4 @@
 GIT
-  remote: /home/juozas/src/forem
-  revision: 9e15e572fba5afb0f7e4e011025aab1e9da863c5
-  specs:
-    forem (1.0.0.beta1)
-      cancan
-      forem-redcarpet (= 1.0.0)
-      rails (~> 3.1)
-      simple_form
-      workflow (= 0.8.0)
-
-GIT
   remote: git://github.com/resolve/refinerycms.git
   revision: fe9ad87bb91495d0ef18364be56661afb1032e48
   branch: 2-0-stable
@@ -53,6 +42,15 @@ GIT
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.4)
+
+PATH
+  remote: /home/juozas/src/forem
+  specs:
+    forem (1.0.0.beta1)
+      cancan
+      rails (~> 3.1)
+      simple_form
+      workflow (= 0.8.0)
 
 PATH
   remote: /home/juozas/src/refinerycms_membership
@@ -99,7 +97,6 @@ GEM
       activerecord (>= 3.0.0)
     babosa (0.3.7)
     bcrypt-ruby (3.0.1)
-    blankslate (2.1.2.4)
     builder (3.0.0)
     cancan (1.6.7)
     coffee-rails (3.2.2)
@@ -120,10 +117,6 @@ GEM
     erubis (2.7.0)
     execjs (1.4.0)
       multi_json (~> 1.0)
-    ffi (1.0.11)
-    forem-redcarpet (1.0.0)
-      pygments.rb (= 0.2.4)
-      redcarpet (= 2.0.1)
     friendly_id (4.0.6)
     globalize3 (0.2.0)
       activemodel (>= 3.0.0)
@@ -152,8 +145,6 @@ GEM
       activerecord (~> 3.0)
       railties (~> 3.0)
     polyglot (0.3.3)
-    pygments.rb (0.2.4)
-      rubypython (~> 0.5.3)
     rack (1.4.1)
     rack-cache (1.2)
       rack (>= 0.4)
@@ -181,7 +172,6 @@ GEM
     rbx-require-relative (0.0.9)
     rdoc (3.12)
       json (~> 1.4)
-    redcarpet (2.0.1)
     refinerycms-settings (2.0.1)
       refinerycms-core (~> 2.0.1)
     ruby-debug (0.10.4)
@@ -189,9 +179,6 @@ GEM
       ruby-debug-base (~> 0.10.4.0)
     ruby-debug-base (0.10.4)
       linecache (>= 0.3)
-    rubypython (0.5.3)
-      blankslate (>= 2.1.2.3)
-      ffi (~> 1.0.7)
     sanitize (2.0.3)
       nokogiri (>= 1.4.4, < 1.6)
     sass (3.1.18)
