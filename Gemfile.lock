@@ -1,4 +1,12 @@
 GIT
+  remote: git://github.com/juozasg/forem-html_formatter.git
+  revision: d7534963a58ff623085733781cb9039aebf54222
+  specs:
+    forem-html_formatter (0.1.0)
+      forem
+      sanitize
+
+GIT
   remote: git://github.com/resolve/refinerycms.git
   revision: fe9ad87bb91495d0ef18364be56661afb1032e48
   branch: 2-0-stable
@@ -225,6 +233,7 @@ DEPENDENCIES
   coffee-rails (~> 3.2.0)
   execjs
   forem!
+  forem-html_formatter!
   jquery-rails
   json
   mysql2
@@ -232,7 +241,6 @@ DEPENDENCIES
   refinerycms!
   refinerycms-memberships (= 2.0)!
   ruby-debug
-  sanitize
   sass-rails (~> 3.2.0)
   uglifier (>= 1.0.3)
   unicorn

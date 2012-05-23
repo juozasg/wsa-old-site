@@ -23,8 +23,6 @@ gem 'execjs'
 # TODO: test if rubyracer still needed execjs runtime
 # gem 'therubyracer', '0.9.6'
 
-gem 'sanitize' # for forem html formatter
-
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
 
@@ -59,6 +57,8 @@ gem 'refinerycms-memberships', '2.0', :path => '/home/juozas/src/refinerycms_mem
 # gem 'refinerycms-i18n',           '~> 2.0.0', :git => 'git://github.com/parndt/refinerycms-i18n'
 # gem 'forem', :git => "git://github.com/juozasg/forem.git"
 gem 'forem', :path => "/home/juozas/src/forem"
+
+gem 'forem-html_formatter', :git => 'git://github.com/juozasg/forem-html_formatter.git'
 
 # END USER DEFINED
 
