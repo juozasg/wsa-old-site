@@ -1,13 +1,14 @@
 class ApplicationController < ActionController::Base
   protect_from_forgery
 
-  append_before_filter :force_login_user
+  # append_before_filter :force_login_user
 
 
   def forem_user
-    if current_refinery_user && current_refinery_user.has_role?(:member)
-      current_refinery_user
-    end
+    # if current_refinery_user && current_refinery_user.has_role?(:member)
+      # current_refinery_user
+    # end
+    current_refinery_user
   end
 
   protected
