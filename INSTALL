@@ -1,0 +1,8 @@
+install mysql stuff
+apt-get install imagemagick
+bundle install
+
+rails console
+u = Refinery::User.first
+u.forem_admin = true
+u.save
