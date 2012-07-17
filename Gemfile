@@ -9,6 +9,8 @@ gem 'mysql2'
 
 gem 'json'
 
+gem 'tidy-ext'
+
 # Gems used only for assets and not required
 # in production environments by default.
 group :assets do
@@ -56,9 +58,12 @@ gem 'refinerycms-memberships', '2.0', :path => '/home/juozas/src/refinerycms_mem
 # Add i18n support (optional, you can remove this if you really want to).
 # gem 'refinerycms-i18n',           '~> 2.0.0', :git => 'git://github.com/parndt/refinerycms-i18n'
 # gem 'forem', :git => "git://github.com/juozasg/forem.git"
+
+gem 'cancan', '= 1.6.7' # this version works correctly
 gem 'forem', :path => "/home/juozas/src/forem"
 
-gem 'forem-html_formatter', :git => 'git://github.com/juozasg/forem-html_formatter.git'
+# gem 'forem-html_formatter', :git => 'git://github.com/juozasg/forem-html_formatter.git'
+gem 'forem-html_formatter', :path => '/home/juozas/src/forem-html_formatter'
 
 # END USER DEFINED
 
