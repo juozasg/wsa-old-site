@@ -1,3 +1,4 @@
+require 'tidy'
 Rails.application.config.to_prepare do
   Refinery::User.class_eval do
     include Refinery::User::ForemExtension
@@ -15,5 +16,13 @@ Rails.application.config.to_prepare do
   Forem::Topic.class_eval do
     extend FriendlyId
     friendly_id :subject
+  end
+
+  Forem::Post.class_eval do
+    before_save do
+      if self.text_changed?
+        self.text = Tidy.new(:show_body_only => 'true').clean(self.text)
+      end
+    end
   end
 end
