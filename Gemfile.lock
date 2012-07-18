@@ -48,6 +48,7 @@ PATH
   specs:
     forem (1.0.0.beta1)
       cancan
+      friendly_id (~> 4.0)
       rails (~> 3.1)
       simple_form
       workflow (= 0.8.0)

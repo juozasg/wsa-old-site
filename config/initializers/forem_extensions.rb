@@ -8,16 +8,7 @@ Rails.application.config.to_prepare do
     include Forem::ForumsControllerExtension
   end
 
-  Forem::Forum.class_eval do
-    extend FriendlyId
-    friendly_id :title
-  end
-
-  Forem::Topic.class_eval do
-    extend FriendlyId
-    friendly_id :subject
-  end
-
+  ### Tidy HTML Post text ###
   Forem::Post.class_eval do
     before_save do
       if self.text_changed?
