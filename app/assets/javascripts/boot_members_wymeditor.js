@@ -19,8 +19,6 @@ $(function() {
     , updateSelector: 'input[name="commit"]'
   };
 
-  // wymeditor_boot_options = {skin: 'refinery'};
-  $('form.edit_post textarea, form.new_post textarea').wymeditor(wymeditor_boot_options);
-  // $('.wymeditor').wymeditor(wymeditor_boot_options);
+  $('form.edit_post textarea, form.new_post textarea, form.new_topic textarea').wymeditor(wymeditor_boot_options);
 
 });

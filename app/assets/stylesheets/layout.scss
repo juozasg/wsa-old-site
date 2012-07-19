@@ -25,6 +25,10 @@ header, #header {
     border-top: 1px solid #ccc;
 }
 
+#forum > h2:first-child, #topic > h2:first-child {
+    padding-top: 12px;
+}
+
 #body {
     float: left;
     width: 596px;

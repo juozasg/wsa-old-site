@@ -63,6 +63,10 @@ body {
     background-color: white;
 }
 
+#forum > h2:first-child, #topic > h2:first-child {
+    background-color: white;
+}
+
 #side_body img {
     border: 3px solid #c7c7c7;
 }
@@ -86,6 +90,8 @@ body {
 #body_content_title, #forums_title, #forum > h2:first-child, #topic > h2:first-child {
     border: 1px solid #ccc;
 }
+
+
 
 #menu, menu {
     li.selected {
