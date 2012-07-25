@@ -1,4 +1,3 @@
-# This migration comes from refinery_memberships (originally 20120110165305)
 class AddConfirmationFieldsToUsers < ActiveRecord::Migration
 
   def self.up

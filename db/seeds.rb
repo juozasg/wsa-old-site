@@ -14,5 +14,3 @@ end
 # Added by Refinery CMS Pages extension
 Refinery::Pages::Engine.load_seed
 
-# Added by Refinery CMS Memberships engine
-Refinery::Memberships::Engine.load_seed
