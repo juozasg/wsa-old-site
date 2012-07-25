@@ -37,11 +37,11 @@ gem 'unicorn'
 # To use debugger
 gem 'ruby-debug'
 
-
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+# gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+gem 'refinerycms',              :path => '/home/juozas/src/refinerycms'
 
 # END REFINERY CMS ============================================================
 

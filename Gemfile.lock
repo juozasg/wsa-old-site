@@ -1,7 +1,22 @@
-GIT
-  remote: git://github.com/resolve/refinerycms.git
-  revision: fe9ad87bb91495d0ef18364be56661afb1032e48
-  branch: 2-0-stable
+PATH
+  remote: /home/juozas/src/forem
+  specs:
+    forem (1.0.0.beta1)
+      cancan
+      friendly_id (~> 4.0)
+      rails (~> 3.1)
+      simple_form
+      workflow (= 0.8.0)
+
+PATH
+  remote: /home/juozas/src/forem-html_formatter
+  specs:
+    forem-html_formatter (0.1.0)
+      forem
+      sanitize
+
+PATH
+  remote: /home/juozas/src/refinerycms
   specs:
     refinerycms (2.0.4)
       bundler (~> 1.0)
@@ -42,23 +57,6 @@ GIT
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.4)
-
-PATH
-  remote: /home/juozas/src/forem
-  specs:
-    forem (1.0.0.beta1)
-      cancan
-      friendly_id (~> 4.0)
-      rails (~> 3.1)
-      simple_form
-      workflow (= 0.8.0)
-
-PATH
-  remote: /home/juozas/src/forem-html_formatter
-  specs:
-    forem-html_formatter (0.1.0)
-      forem
-      sanitize
 
 PATH
   remote: /home/juozas/src/refinerycms_membership
