@@ -47,8 +47,6 @@ gem 'refinerycms',              :path => '/home/juozas/src/refinerycms'
 
 # USER DEFINED
 
-# gem 'refinerycms-memberships', '2.0', :path => '/home/juozas/src/refinerycms_membership'
-
 # Specify additional Refinery CMS Engines here (all optional):
 # gem 'refinerycms-inquiries',    '~> 1.0'
 # gem "refinerycms-news",         '~> 1.2'
