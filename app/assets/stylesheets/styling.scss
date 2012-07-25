@@ -87,6 +87,14 @@ body {
 #header #logo {
   color: #8ab;
 }
+
+#header #login_status a {
+  color: #8ab;
+  font-weight: bold;
+  text-decoration: underline;
+  &:hover {border: none};
+}
+
 #body_content_title, #forums_title, #forum > h2:first-child, #topic > h2:first-child {
     border: 1px solid #ccc;
 }

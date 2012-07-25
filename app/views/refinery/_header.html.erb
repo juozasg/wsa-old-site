@@ -1,0 +1,18 @@
+<div id='login_status'>
+  <% if refinery_user_signed_in? %>
+    <strong><%= current_refinery_user.username %></strong> is logged in.
+    <%= link_to "Log out", refinery.destroy_refinery_user_session_path %>
+  <% else %>
+    <%= link_to "Sign up", refinery.new_refinery_user_registration_path %> or
+    <%= link_to "Login", refinery.new_refinery_user_session_path %>
+  <% end %>
+</div>
+
+<h1 id='logo'>
+  <%= link_to Refinery::Core.site_name, refinery.root_path %>
+</h1>
+
+<%= render(:partial => "/refinery/menu", :locals => {
+             :dom_id => 'menu',
+             :css => 'menu'
+           }) %>
