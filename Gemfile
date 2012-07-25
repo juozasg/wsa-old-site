@@ -43,6 +43,7 @@ gem 'ruby-debug'
 # gem 'refinerycms',              :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
 gem 'refinerycms',              :path => '/home/juozas/src/refinerycms'
 
+gem 'refinerycms-settings', :git => 'git://github.com/parndt/refinerycms-settings.git', :branch => '2-0-stable'
 # END REFINERY CMS ============================================================
 
 # USER DEFINED
