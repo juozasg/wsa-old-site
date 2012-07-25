@@ -58,15 +58,6 @@ PATH
       rack-cache (>= 0.5.3)
       refinerycms-core (= 2.0.4)
 
-PATH
-  remote: /home/juozas/src/refinerycms_membership
-  specs:
-    refinerycms-memberships (2.0.0)
-      nokogiri (~> 1.5.0)
-      refinerycms-core (>= 2.0.0)
-      refinerycms-settings (>= 2.0.0)
-      webrat (~> 0.7.3)
-
 GEM
   remote: http://rubygems.org/
   specs:
@@ -178,8 +169,6 @@ GEM
     rbx-require-relative (0.0.9)
     rdoc (3.12)
       json (~> 1.4)
-    refinerycms-settings (2.0.1)
-      refinerycms-core (~> 2.0.1)
     ruby-debug (0.10.4)
       columnize (>= 0.1)
       ruby-debug-base (~> 0.10.4.0)
@@ -218,10 +207,6 @@ GEM
       raindrops (~> 0.7)
     warden (1.1.1)
       rack (>= 1.0)
-    webrat (0.7.3)
-      nokogiri (>= 1.2.0)
-      rack (>= 1.0)
-      rack-test (>= 0.5.3)
     will_paginate (3.0.3)
     workflow (0.8.0)
 
@@ -239,7 +224,6 @@ DEPENDENCIES
   mysql2
   rails (~> 3.2.0)
   refinerycms!
-  refinerycms-memberships (= 2.0)!
   ruby-debug
   sass-rails (~> 3.2.0)
   tidy-ext
