@@ -1,13 +1,10 @@
 Rails.application.config.to_prepare do
-  Refinery::SessionsController.class_eval do
-    skip_before_filter :force_login_user
-  end
+  Refinery::AdminController.class_eval do
 
-  Refinery::PasswordsController.class_eval do
-    skip_before_filter :force_login_user
-  end
+    def hide_from_nonrefinery_user
+      redirect_to '/' unless refinery_user?
+    end
 
-  Refinery::UsersController.class_eval do
-    skip_before_filter :force_login_user
+    before_filter :hide_from_nonrefinery_user
   end
 end
