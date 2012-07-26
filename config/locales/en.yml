@@ -6,3 +6,7 @@ en:
   forem:
     forum:
       new: "New"
+  refinery:
+    users:
+      create:
+        welcome: 'Welcome to WSA Members Site, %{who}'
