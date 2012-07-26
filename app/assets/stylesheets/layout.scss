@@ -25,7 +25,7 @@ header, #header {
     border-top: 1px solid #ccc;
 }
 
-#forum > h2:first-child, #topic > h2:first-child {
+#forum > h2:first-child, #topic > h2:first-child, h2.topics_title, h2.categories_title {
     padding-top: 12px;
 }
 

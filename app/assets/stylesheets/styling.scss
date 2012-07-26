@@ -63,7 +63,7 @@ body {
     background-color: white;
 }
 
-#forum > h2:first-child, #topic > h2:first-child {
+#forum > h2:first-child, #topic > h2:first-child, h2.topics_title, h2.categories_title {
     background-color: white;
 }
 
@@ -95,7 +95,7 @@ body {
   &:hover {border: none};
 }
 
-#body_content_title, #forums_title, #forum > h2:first-child, #topic > h2:first-child {
+#body_content_title, #forums_title, #forum > h2:first-child, #topic > h2:first-child, h2.topics_title, h2.categories_title {
     border: 1px solid #ccc;
 }
 

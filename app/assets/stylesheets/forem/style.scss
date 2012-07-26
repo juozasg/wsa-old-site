@@ -27,34 +27,36 @@
     margin-bottom: 12px;
 }
 
-#topic, #forum {
-  h2{
-    padding: .5em;
-    position: relative;
-    background-color: $light-bg1;
+#topic h2, #forum h2, h2.topics_title, h2.categories_title{
+  padding: .5em;
+  position: relative;
+  color: #232323;
+  // margin: 0;
+  a{
+    text-decoration: none;
     color: #232323;
-    // margin: 0;
-    a{
-      text-decoration: none;
-      color: #232323;
-      &:hover{
-        text-decoration: underline;
-      }
-    }
-    a.reply{
-      margin-right: 1em;
-      font-weight: normal;
-      position: absolute;
-      right: 0;
-      padding: .5em;
-      background-color: #fff;
-      font-size: .5em;
-      text-decoration: none;
-      &:hover{
-        background-color: $light-bg1;
-      }
+    &:hover{
+      text-decoration: underline;
     }
   }
+  a.reply{
+    margin-right: 1em;
+    font-weight: normal;
+    position: absolute;
+    right: 0;
+    padding: .5em;
+    background-color: #fff;
+    font-size: .5em;
+    text-decoration: none;
+    &:hover{
+      background-color: $light-bg1;
+    }
+  }
+}
+
+h2.topics_title, h2.categories_title {
+  padding-top: 12px;
+  margin-bottom: 12px;
 }
 
 #posts{
@@ -209,6 +211,11 @@ table.subdued{
   }
 }
 
+tr.forum a.title, tr.topic .subject a {
+  font-size: 1.1em;
+  color: black;
+}
+
 .pages{
   float: right;
   .pagination > * {
@@ -264,3 +271,10 @@ table.subdued{
     margin-top: 20px;
 }
 
+.moderation {
+  input[type='radio'] {
+    float: left;
+    margin-right: 8px;
+    margin-top: 2px;
+  }
+}
