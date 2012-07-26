@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    $('form input[type=text]:first').focus();
   init_flash_messages();
 });
 
