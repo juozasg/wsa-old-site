@@ -5,6 +5,6 @@
 // the compiled file.
 
 /*
- * require jquery
- * require wymeditor/jquery.wymeditor
+ * require somelibrary
  */
+

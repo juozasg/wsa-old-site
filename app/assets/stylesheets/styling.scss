@@ -167,12 +167,11 @@ form input {
 }
 
 
-#flash {
-    padding: 4px;
+.flash {
+    padding: 8px;
     padding-left: 24px;
+    margin-bottom: 6px;
     color: $default-text;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
     display: none;
 }
 
@@ -189,25 +188,15 @@ form input {
   color: #A00027;
   background: 7px 7px no-repeat image_url('refinery/icons/cancel.png') #FFB1B1;
 }
-.flash.flash_notice #flash_close, .flash.flash_error #flash_close, .flash.flash_alert #flash_close {
-  text-transform: lowercase;
-}
-.flash.flash_message {
-  background: #E0F5E0;
-  padding: 9px;
-  position: relative;
-  margin-bottom: 32px;
-  h2 {
-    margin-top: 12px;
-  }
-}
+
 .flash.flash_message.flash_message, .flash_message * {
   color: #262719;
   font-size: 14px;
 }
-.flash a, .flash a:hover {
+.flash a.flash_close, .flash a.flash_close:hover {
   color: #e20003;
   border-bottom-color: #e20003;
+  float: right;
 }
 
 
