@@ -8,7 +8,7 @@ MembersSite::Application.routes.draw do
 
   # sign_in_path is used by forem to force users to sign in
   match '/sign_in' => redirect('/refinery/login')
-  resources :users
+  resources :users, :only => 'show'
 
 
   mount Forem::Engine, :at => '/'
