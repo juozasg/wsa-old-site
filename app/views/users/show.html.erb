@@ -1,13 +1,16 @@
-<table>
+<h1 id='body_content_title'><%= @user.username %></h1>
+<table class='subdued'>
 <tr>
-  <th>ID</th>
   <th>Username</th>
   <th>Email</th>
+  <th>First Name</th>
+  <th>Last Name</th>
 </te>
 <tr>
-  <td><%= @user.id %></td>
   <td><%= @user.username %></td>
   <td><%= @user.email %></td>
+  <td><%= @user.first_name %></td>
+  <td><%= @user.last_name %></td>
 </tr>
 
 </table>
