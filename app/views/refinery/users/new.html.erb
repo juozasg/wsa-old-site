@@ -1,7 +1,7 @@
 <% if !refinery_users_exist? %>
   <% content_for :header, t('there_are_no_users', :scope => 'refinery.welcome') %>
 <% else %>
-  <% content_for :header, "Enter your account information. You'll have to verify your email to log in." %>
+  <% content_for :header, "Enter your account information. You'll have to verify your email and get approved by site administrator to log in." %>
 <% end %>
 
 <%= form_for :user, :url => refinery.refinery_user_registration_path do |f| -%>
