@@ -9,4 +9,8 @@ en:
   refinery:
     users:
       create:
-        welcome: 'Welcome to WSA Members Site, %{who}'
+        welcome: "You've registered on the WSA Members Site, %{who}. Please check your email to confirm before logging in."
+
+  devise:
+    failure:
+      unconfirmed: 'You have to confirm your account by email before continuing.'
