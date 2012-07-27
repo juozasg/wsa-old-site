@@ -1,0 +1,7 @@
+<% flash.each do |key, value| %>
+<div id='flash' class="flash flash_<%= key %>" style='visibility: hidden;' >
+  <%= value %>
+  <%= link_to t(".close"), "",
+              :id => "flash_close" %>
+</div>
+<% end %>
