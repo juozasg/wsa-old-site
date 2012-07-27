@@ -236,17 +236,25 @@ tr.forum a.title, tr.topic .subject a {
   }
 }
 
+tr.topic td.icon {width: 84px;}
 .lock.icon{
   width: 24px;
   height: 24px;
-  background: transparent url(/assets/forem/lock_icon.png) 0 0;
+  background: transparent url(/assets/forem/lock.png) 0 0;
   display: inline-block;
 }
 
 .pin.icon{
-  width: 9px;
-  height: 15px;
-  background: transparent url(/assets/forem/pin_icon.png) 0 0;
+  width: 24px;
+  height: 24px;
+  background: transparent url(/assets/forem/pin.png) 0 0;
+  display: inline-block;
+}
+
+.new_posts.icon{
+  width: 24px;
+  height: 24px;
+  background: transparent url(/assets/forem/new.png) 0 0;
   display: inline-block;
 }
 
