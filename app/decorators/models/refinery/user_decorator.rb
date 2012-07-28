@@ -4,7 +4,7 @@ Refinery::User.class_eval do
   validates :first_name, :presence => true
   validates :last_name, :presence => true
 
-  attr_accessible :first_name, :last_name, :approved
+  attr_accessible :first_name, :last_name, :approved, :forem_admin
 
   before_create :automatically_forem_approve
 

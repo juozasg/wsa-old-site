@@ -39,6 +39,14 @@
     <%= f.label :approved, :class => "stripped" %>
   </div>
 
+  <div class='field checkboxes'>
+    <span class='label_with_help'>
+      <%= f.label :forem_admin, 'Forem settings', :class => "title_label" %>
+    </span>
+    <%= f.check_box :forem_admin %>
+    <%= f.label :forem_admin, :class => "stripped" %>
+  </div>
+
   <div class='field plugin_access'>
     <span class='label_with_help'>
       <%= f.label :plugin_access, t('.plugin_access'), :class => "title_label" %>
