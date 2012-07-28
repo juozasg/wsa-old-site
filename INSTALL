@@ -8,3 +8,4 @@ u = Refinery::User.first
 u.forem_admin = true
 u.confirm!
 u.save
+Refinery::Page.first.update_attribute(:menu_match,'^(/|/categories/.*|/forums/.*|/topics/.*|/users/.*)$')
