@@ -1,7 +1,7 @@
 MembersSite::Application.configure do
 
   # Refinery has set config.assets.initialize_on_precompile = false by default.
-  config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = true
 
   # Settings specified here will take precedence over those in config/application.rb
 
