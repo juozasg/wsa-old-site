@@ -36,7 +36,8 @@
       <%= f.label :approved, 'Approved for logging in', :class => "title_label" %>
     </span>
     <%= f.check_box :approved %>
-    <%= f.label :approved, :class => "stripped" %>
+    <% label_style = @user.approved ? '' : 'color: red' %>
+    <%= f.label :approved, :class => "stripped", :style => label_style %>
   </div>
 
   <div class='field checkboxes'>
