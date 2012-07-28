@@ -1,8 +1,10 @@
 Refinery::User.class_eval do
+  include Refinery::User::ForemExtension
+
   validates :first_name, :presence => true
   validates :last_name, :presence => true
 
-  attr_accessible :first_name, :last_name
+  attr_accessible :first_name, :last_name, :approved
 
   before_create :automatically_forem_approve
 
@@ -11,7 +13,7 @@ Refinery::User.class_eval do
   end
 
   def active_for_authentication?
-    super && (approved? || has_role? :superuser)
+    super && (approved? || has_role?(:superuser))
   end
 
   def inactive_message
