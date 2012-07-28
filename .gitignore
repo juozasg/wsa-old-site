@@ -31,6 +31,7 @@ public/stylesheets/cache
 
 # Vendor Cache
 vendor/cache
+vendor/bundle
 
 # Acts as Indexed
 index/**/*
