@@ -216,6 +216,10 @@ tr.forum a.title, tr.topic .subject a {
   color: black;
 }
 
+tr.forum td span.moderators {
+  display:none;
+}
+
 .pages{
   float: right;
   .pagination > * {
