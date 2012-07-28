@@ -9,4 +9,16 @@ Refinery::User.class_eval do
   def automatically_forem_approve
     self.forem_state = 'approved'
   end
+
+  def active_for_authentication?
+    super && approved?
+  end
+
+  def inactive_message
+    if !approved?
+      :not_approved
+    else
+      super # Use whatever other message
+    end
+  end
 end

@@ -14,3 +14,4 @@ en:
   devise:
     failure:
       unconfirmed: 'You have to confirm your account by email before continuing.'
+      not_approved: 'Your account has not been approved by your administrator yet.'
