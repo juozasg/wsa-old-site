@@ -12,7 +12,12 @@ class ApplicationController < ActionController::Base
   end
 
   def after_sign_in_path_for(resource)
-    session["refinery_user_return_to"] || '/'
+    # don't redirect to confirmation tokens.
+    if session["refinery_user_return_to"] =~ /confirmation_token/
+      '/'
+    else
+      session["refinery_user_return_to"] || '/'
+    end
   end
 
   protected
