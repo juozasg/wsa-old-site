@@ -11,7 +11,7 @@ Refinery::User.class_eval do
   end
 
   def active_for_authentication?
-    super && approved?
+    super && (approved? || has_role? :superuser)
   end
 
   def inactive_message
