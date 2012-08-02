@@ -34,9 +34,6 @@ gem 'unicorn'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# To use debugger
-gem 'ruby-debug'
-
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
