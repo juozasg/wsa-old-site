@@ -4,7 +4,7 @@
 # documentation.
 
 app_name = "members.workersolidarity.org"
-app_path = "/var/www/#{app_name}"
+app_path = "/var/www/#{app_name}/current"
 
 worker_processes 4
 
