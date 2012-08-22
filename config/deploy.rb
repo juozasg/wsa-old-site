@@ -26,7 +26,10 @@ task :deploy do
     invoke :'rails:assets_precompile'
 
     to :launch do
-      queue 'touch tmp/restart.txt'
+      queue "export UNICORNPID=$(ps aux | grep 'unicorn_rails master' | grep -v grep | cut -d ' ' -f 6);
+             kill -USR2 $UNICORNPID;
+             sleep 5;
+             kill -QUIT $UNICORNPID"
     end
   end
 end
