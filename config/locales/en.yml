@@ -8,6 +8,8 @@ en:
       new: "New"
   refinery:
     users:
+      new:
+        fill_form: "Enter your account information. You'll have to verify your email and get approved by site administrator to log in."
       create:
         welcome: "You've registered on the WSA Members Site, %{who}. Please check your email to confirm before logging in."
 
