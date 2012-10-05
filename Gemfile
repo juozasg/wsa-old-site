@@ -37,17 +37,28 @@ gem 'unicorn'
 # REFINERY CMS ================================================================
 # Anything you put in here will be overridden when the app gets updated.
 
-gem 'refinerycms',              :git => 'git://github.com/juozasg/refinerycms.git', :branch => '2-0-stable-registrations'
+# gem 'refinerycms',              :git => 'git://github.com/juozasg/refinerycms.git', :branch => '2-0-stable-registrations'
 # gem 'refinerycms',              :path => '/home/juozas/src/refinerycms'
 
 
-# gem 'refinerycms-core',       :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
-# gem 'refinerycms-authentication',              :path => '/home/juozas/src/refinerycms'
-# gem 'refinerycms-dashboard',  :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
-# gem 'refinerycms-images',     :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
-# gem 'refinerycms-pages',      :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
-# gem 'refinerycms-resources',  :git => 'git://github.com/resolve/refinerycms.git', :branch => '2-0-stable'
+gem 'refinerycms-core',       :git => 'git://github.com/resolve/refinerycms.git', :tag => '2.0.8'
+gem 'refinerycms-dashboard',  :git => 'git://github.com/resolve/refinerycms.git', :tag => '2.0.8'
+gem 'refinerycms-images',     :git => 'git://github.com/resolve/refinerycms.git', :tag => '2.0.8'
+gem 'refinerycms-pages',      :git => 'git://github.com/resolve/refinerycms.git', :tag => '2.0.8'
+gem 'refinerycms-resources',  :git => 'git://github.com/resolve/refinerycms.git', :tag => '2.0.8'
 gem 'refinerycms-settings',   :git => 'git://github.com/parndt/refinerycms-settings.git', :branch => '2-0-stable'
+
+gem 'refinerycms-portal-authentication',  :git => 'git://github.com/juozasg/refinerycms-portal-authentication.git'
+
+
+# gem 'refinerycms-core',                               :path => '/home/juozas/src/refinerycms'
+# gem 'refinerycms-portal-authentication',              :path => '/home/juozas/src/refinerycms-portal-authentication'
+# gem 'refinerycms-dashboard',                          :path => '/home/juozas/src/refinerycms'
+# gem 'refinerycms-images',                             :path => '/home/juozas/src/refinerycms'
+# gem 'refinerycms-pages',                              :path => '/home/juozas/src/refinerycms'
+# gem 'refinerycms-resources',                          :path => '/home/juozas/src/refinerycms'
+
+# gem 'refinerycms-settings',   :git => 'git://github.com/parndt/refinerycms-settings.git', :branch => '2-0-stable'
 
 
 # END REFINERY CMS ============================================================

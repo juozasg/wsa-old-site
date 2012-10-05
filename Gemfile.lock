@@ -20,23 +20,28 @@ GIT
       workflow (= 0.8.0)
 
 GIT
-  remote: git://github.com/juozasg/refinerycms.git
-  revision: 88419028c4ea2ef2b4f455ec4ade7c5292a98e71
-  branch: 2-0-stable-registrations
+  remote: git://github.com/juozasg/refinerycms-portal-authentication.git
+  revision: d62860d771162f6fa3d921a0e1e432a21779d23b
   specs:
-    refinerycms (2.0.5)
-      bundler (~> 1.0)
-      refinerycms-authentication (= 2.0.5)
-      refinerycms-core (= 2.0.5)
-      refinerycms-dashboard (= 2.0.5)
-      refinerycms-images (= 2.0.5)
-      refinerycms-pages (= 2.0.5)
-      refinerycms-resources (= 2.0.5)
-    refinerycms-authentication (2.0.5)
+    refinerycms-portal-authentication (2.0.8)
       devise (~> 2.0.0)
       orm_adapter (~> 0.0.7)
-      refinerycms-core (= 2.0.5)
-    refinerycms-core (2.0.5)
+      refinerycms-core (= 2.0.8)
+
+GIT
+  remote: git://github.com/parndt/refinerycms-settings.git
+  revision: 275ba2a86a214b7e48b55093be81319deb8d359a
+  branch: 2-0-stable
+  specs:
+    refinerycms-settings (2.0.2)
+      refinerycms-core (~> 2.0.1)
+
+GIT
+  remote: git://github.com/resolve/refinerycms.git
+  revision: 30d47ceddc6f876b754734a3109aace03402b1b2
+  tag: 2.0.8
+  specs:
+    refinerycms-core (2.0.8)
       acts_as_indexed (~> 0.7.7)
       awesome_nested_set (~> 2.1.3)
       coffee-rails (~> 3.2.1)
@@ -48,29 +53,21 @@ GIT
       truncate_html (~> 0.5)
       uglifier (>= 1.0.3)
       will_paginate (~> 3.0.2)
-    refinerycms-dashboard (2.0.5)
-      refinerycms-core (= 2.0.5)
-    refinerycms-images (2.0.5)
+    refinerycms-dashboard (2.0.8)
+      refinerycms-core (= 2.0.8)
+    refinerycms-images (2.0.8)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-      refinerycms-core (= 2.0.5)
-    refinerycms-pages (2.0.5)
+      refinerycms-core (= 2.0.8)
+    refinerycms-pages (2.0.8)
       awesome_nested_set (~> 2.1.3)
       babosa (!= 0.3.6)
-      refinerycms-core (= 2.0.5)
+      refinerycms-core (= 2.0.8)
       seo_meta (~> 1.3.0)
-    refinerycms-resources (2.0.5)
+    refinerycms-resources (2.0.8)
       dragonfly (~> 0.9.8)
       rack-cache (>= 0.5.3)
-      refinerycms-core (= 2.0.5)
-
-GIT
-  remote: git://github.com/parndt/refinerycms-settings.git
-  revision: 275ba2a86a214b7e48b55093be81319deb8d359a
-  branch: 2-0-stable
-  specs:
-    refinerycms-settings (2.0.2)
-      refinerycms-core (~> 2.0.1)
+      refinerycms-core (= 2.0.8)
 
 GEM
   remote: http://rubygems.org/
@@ -104,9 +101,9 @@ GEM
       multi_json (~> 1.0)
     acts_as_indexed (0.7.8)
     arel (3.0.2)
-    awesome_nested_set (2.1.3)
+    awesome_nested_set (2.1.5)
       activerecord (>= 3.0.0)
-    babosa (0.3.7)
+    babosa (0.3.8)
     bcrypt-ruby (3.0.1)
     builder (3.0.0)
     cancan (1.6.7)
@@ -228,7 +225,12 @@ DEPENDENCIES
   json
   mysql2
   rails (~> 3.2.0)
-  refinerycms!
+  refinerycms-core!
+  refinerycms-dashboard!
+  refinerycms-images!
+  refinerycms-pages!
+  refinerycms-portal-authentication!
+  refinerycms-resources!
   refinerycms-settings!
   sass-rails (~> 3.2.0)
   tidy-ext
