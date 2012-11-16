@@ -31,6 +31,8 @@ gem 'execjs'
 # Use unicorn as the web server
 gem 'unicorn'
 
+gem 'content_for_in_controllers'
+
 # Deploy with Capistrano
 # gem 'capistrano'
 

@@ -12,12 +12,10 @@
   <%= link_to Refinery::Core.site_name, refinery.root_path %>
 </h1>
 
-<% flash.each do |key, message| %>
-  <div class='flash flash_<%= key %>'>
-    <%= message %>
-    <a href class="flash_close">Close</a>
-  </div>
-<% end %>
+<div id="flash_container">
+  <%= render '/refinery/no_script' %>
+  <%= render '/refinery/message' %>
+</div>
 
 <%= render(:partial => "/refinery/menu", :locals => {
              :dom_id => 'menu',

@@ -14,14 +14,17 @@ init_flash_messages = function(){
 
   $('.flash_close').live('click', function(e) {
     try {
-      $('.flash').animate({
+      var my_flash = $(this).parents('.flash');
+      console.log("hiding...");
+      console.log(my_flash);
+      my_flash.animate({
          'opacity': 0,
          'visibility': 'hidden'
       }, 330, function() {
-        $('.flash').hide();
+        my_flash.hide();
       });
     } catch(ex) {
-      $('.flash').hide();
+      my_flash.hide();
     }
     e.preventDefault();
   });

@@ -3,6 +3,10 @@ class ApplicationController < ActionController::Base
 
   append_before_filter :authenticate_refinery_user!
 
+  before_filter {
+    content_for :stylesheets, "<link href='/assets/flash.css' media='screen' rel='stylesheet' type='text/css' />".html_safe
+    content_for :javascripts, "<script src='/assets/flash.js' type='text/javascript'></script>".html_safe
+  }
 
   def forem_user
     # if current_refinery_user && current_refinery_user.has_role?(:member)
