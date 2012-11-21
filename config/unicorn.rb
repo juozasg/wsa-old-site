@@ -3,7 +3,9 @@
 # See http://unicorn.bogomips.org/Unicorn/Configurator.html for complete
 # documentation.
 
-app_name = "members.workersolidarity.org"
+require 'config/app.rb'
+
+app_name = @app_host
 app_path = "/var/www/#{app_name}/current"
 
 worker_processes 4

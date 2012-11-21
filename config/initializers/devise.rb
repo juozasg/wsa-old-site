@@ -1,3 +1,5 @@
+require 'config/app.rb'
+
 require 'devise'
 
 # Use this hook to configure devise mailer, warden hooks and so forth.
@@ -6,7 +8,7 @@ Devise.setup do |config|
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in Devise::Mailer,
   # note that it will be overwritten if you use your own mailer class with default "from" parameter.
-  config.mailer_sender = '"WSA Members Site" <no-reply@members.workersolidarity.org>'
+  config.mailer_sender = "'@app_name' <no-reply@#{@app_host}>"
 
   # Configure the class responsible to send e-mails.
   # config.mailer = "Devise::Mailer"
